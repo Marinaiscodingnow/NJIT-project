@@ -54,7 +54,6 @@ function swapPhoto() {
 	 mLastFrameTime = 0;
 	 mCurrentIndex += 1;
 }
-
 function toggleDetails()
 {
 	if($(".moreIndicator").hasClass("rot90"))
@@ -68,6 +67,7 @@ function toggleDetails()
 	}
 	$(".details").slideToggle( "slow", "linear");
 }
+
 
 // Counter for the mImages array
 var mCurrentIndex = 0;
@@ -83,23 +83,23 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'images.json';
+var mUrl;
+
 
 function fetchJSON()
 {
 	mRequest.onreadystatechange = function() {
-		console.log("on ready state change");
+		//console.log("on ready state change");
 		if(this.readyState == 4 && this.status == 200){
 			mJson = JSON.parse(mRequest.responseText);
-			iterateJson(mJson);
+			iterateJSON(mJson);
 		}
 	}
-	mRequest.open("Get",mUrl, true);
+	mRequest.open("GET",mUrl, true);
 	mRequest.send();
 }
 
-
-function iterateJSON(mJson)
+function iterateJSON()
 {
 	for(x =0; x < mJson.images.length; x++)
 	{
@@ -121,17 +121,36 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 	}
 }
 
+
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
+	$("#nextPhoto").position({
+		my: "right bottom",
+		at: "right bottom",
+		of: "#nav"
+	});
+})
 
+
+	const urlParams = new URLSearchParams(window.location.search);
+
+	for (const [key, value] of urlParams) {
+		console.log(`${key}:${value}`);
+		mUrl = value;
+	}
+	if(mUrl == undefined)
+	{
+		mUrl = 'images.json';
+	}
+
+	fetchJSON();
 	
-});
 
 window.addEventListener('load', function() {
 	
-	console.log('window loaded');
+	//console.log('window loaded');
 
 }, false);
 
@@ -143,3 +162,8 @@ function GalleryImage() {
 	var img;
 
 }
+
+
+
+
+

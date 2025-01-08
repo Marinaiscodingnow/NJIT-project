@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="photoBooth">
-    <p class="banner">IS219 Slide Show</p>
+    <p class="banner">Travel Destinations</p>
     <div id="slideShow">
       <div class="photoHolder">
         <img class="thumbnail" id="photo" src="http://placehold.it/518x389?text=Welcome+to+my+Gallery" alt="Gallery Image"/>
@@ -25,8 +25,18 @@
         <p class="description">Description: </p>
         <p class="date">Date: </p>
       </div>
-
     </div>
   </div>
+  <script>
+    $("#prevPhoto").click(function() {
+      mCurrentIndex -= 2;
+      swapPhoto();
+    });
+  </script>
+    <script>
+      $("#nextPhoto").click(function() {
+        swapPhoto();
+      });
+    </script>
 </body>
 </html>
