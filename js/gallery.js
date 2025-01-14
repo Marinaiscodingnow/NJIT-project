@@ -83,7 +83,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl;
+var mUrl = 'images.json';
 
 
 function fetchJSON()
@@ -101,7 +101,7 @@ function fetchJSON()
 
 function iterateJSON()
 {
-	for(x =0; x < mJson.images.length; x++)
+	for(x = 0; x < mJson.images.length; x++)
 	{
 		mImages[x] = new GalleryImage();
 		mImages[x].location = mJson.images[x].imgLocation;
@@ -131,7 +131,7 @@ $(document).ready( function() {
 		at: "right bottom",
 		of: "#nav"
 	});
-})
+
 
 
 	const urlParams = new URLSearchParams(window.location.search);
@@ -147,7 +147,7 @@ $(document).ready( function() {
 
 	fetchJSON();
 	
-
+});
 window.addEventListener('load', function() {
 	
 	//console.log('window loaded');

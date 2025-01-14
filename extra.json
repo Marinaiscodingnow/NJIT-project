@@ -1,0 +1,28 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/brazil.jpg",
+            "imgLocation": "Brazil",
+            "description": "The Amazon Rainforest",
+            "date": "07/18/2014"
+        },
+        {
+            "imgPath": "img/places/grandcanyon.jpg",
+            "imgLocation": "Nevada",
+            "description": "The Grand Canyon",
+            "date": "09/02/2016"
+        },
+        {
+            "imgPath": "img/places/yosemite.jpg",
+            "imgLocation": "California",
+            "description": "Yosemite's half dome",
+            "date": "11/30/2009"
+        },
+        {
+            "imgPath": "img/places/redwood.jpg",
+            "imgLocation": "California",
+            "description": "The Red Wood Forest",
+            "date": "05/12/2013"
+        }
+  ]
+}
