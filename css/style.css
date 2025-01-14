@@ -32,20 +32,21 @@ body {
 	opacity: .8;
 	bottom: 10PX;
 	left: 45%;
-	top: 305px;
+	top: 360px;
 }
 
 .thumbnail {
 	position: relative;
 	box-shadow: 1px 3px 20px 0px;
-	max-width: 520px;
+	width: 520px;
+	height: 350px;
 	margin-right: 40px;
 }
 
 
 .banner {
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 1.65em;
 }
 
 #nav {
@@ -71,7 +72,7 @@ body {
 	margin-top: 20px;
 }
 .details {
-	border: 1px #000 dashed;
+	border: 2px #000 dotted;
 	padding: 0px 10px;
 	margin: 20px 0px;
 }

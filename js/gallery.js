@@ -36,11 +36,11 @@ function swapPhoto() {
 
 	if (mCurrentIndex >= mImages.length)
 	{
-		mCurrentIndex= 0;
+		mCurrentIndex = 0;
 	}
 
-	 if(mCurrentIndex = 0) {
-		mCurrentIndex = mImages.length-1;
+	 if(mCurrentIndex < 0) {
+		mCurrentIndex = mImages.length - 1;
 	 }
 
 	 document.getElementById('photo').src = mImages[mCurrentIndex].img;
@@ -54,6 +54,7 @@ function swapPhoto() {
 	 mLastFrameTime = 0;
 	 mCurrentIndex += 1;
 }
+
 function toggleDetails()
 {
 	if($(".moreIndicator").hasClass("rot90"))
@@ -83,7 +84,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'images.json';
+var mUrl = 'extra.json';
 
 
 function fetchJSON()
@@ -114,7 +115,7 @@ function iterateJSON()
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
-function makeGalleryImageOnloadCallback(galleryImage) {
+function makeGalleryImageOnloadCallBack(galleryImage) {
 	return function(e) {
 		galleryImage.img = e.target;
 		mImages.push(galleryImage);
@@ -142,7 +143,7 @@ $(document).ready( function() {
 	}
 	if(mUrl == undefined)
 	{
-		mUrl = 'images.json';
+		mUrl = 'extra.json';
 	}
 
 	fetchJSON();
