@@ -3,32 +3,62 @@
         {
             "imgPath": "img/places/brazil.jpg",
             "imgLocation": "Brazil",
-            "description": "The Amazon Rainforest",
-            "date": "07/18/2014"
+            "description": "Zip-lining in the Amazon Rainforest",
+            "date": "To be determined"
         },
         {
             "imgPath": "img/places/grandcanyon.jpg",
             "imgLocation": "Nevada",
-            "description": "The Grand Canyon",
-            "date": "09/02/2016"
+            "description": "Walking the Grand Canyon",
+            "date": "To be determined"
         },
         {
             "imgPath": "img/places/yosemite.jpg",
             "imgLocation": "California",
-            "description": "Yosemite's half dome",
-            "date": "11/30/2009"
+            "description": "Seeing Yosemite's half dome",
+            "date": "To be determined"
         },
         {
             "imgPath": "img/places/redwood.jpg",
             "imgLocation": "California",
-            "description": "The Red Wood Forest",
-            "date": "05/12/2013"
+            "description": "Hiking The Red Wood Forest",
+            "date": "To be determined"
         },
         {
             "imgPath": "img/places/britain.jpg",
             "imgLocation": "Great Britain",
-            "description": "Big Ben Clock tower",
+            "description": "Touring the Big Ben Clock tower - and seeing Hogwarts!",
             "date": "08/19/2001"
+        },
+        {
+            "imgPath": "img/places/camping.jpeg",
+            "imgLocation": "Black Bear Mountain",
+            "description": "Exploring the outdoors",
+            "date": "Father's day"
+        },
+        {
+            "imgPath": "img/places/germany.jpeg",
+            "imgLocation": "Insel fohr, Germany",
+            "description": "Seeing the sunrise on the beach",
+            "date": "08/23"
+        },
+        {
+            "imgPath": "img/places/omiopa.jpeg",
+            "imgLocation": "New York",
+            "description": "My grandparents house",
+            "date": "06/24"
+        },
+        {
+            "imgPath": "img/places/lake.jpeg",
+            "imgLocation": "Otsego Lake",
+            "description": "Watching the water fight the ice",
+            "date": "01/24"
+        },
+        {
+            "imgPath": "img/places/farmersmark.jpeg",
+            "imgLocation": "Farmers Market",
+            "description": "Tractor showing, this photo actually got an award",
+            "date": "09/23"
         }
   ]
 }
